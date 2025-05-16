@@ -1,4 +1,6 @@
-# tpointurier/configs
+<p align="center">
+    <img src="https://imgur.com/kggbd1z.png" alt="@tpointurier/configs">
+</p>
 
 **ESLint Flat Config Presets** for JavaScript, TypeScript, Vue, AdonisJS, etc.
 
