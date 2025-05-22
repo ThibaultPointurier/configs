@@ -36,4 +36,5 @@ export type TPointurierOptions = {
     | ((OptionsTypeScriptWithTypes | OptionsTypeScriptParserOptions) & { typeAwareRules?: boolean })
 
   unocss?: boolean
+  react?: boolean
 }

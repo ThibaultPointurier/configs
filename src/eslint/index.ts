@@ -19,6 +19,7 @@ import { sortPackageJson, sortTsconfig } from './configs/sort.js'
 import { hasAdonisjs, hasTypeScript, hasUnocss, hasVue } from './env.js'
 import type { Awaitable, FlatConfigItem, TPointurierOptions, UserConfigItem } from './types.js'
 import { adonisjs } from './configs/adonisjs.js'
+import { react } from './configs/react.js'
 
 export * from './configs/index.js'
 
@@ -44,6 +45,7 @@ export function tpointurier(
     prettier: enablePrettier = true,
     unocss: enableUno = hasUnocss,
     adonisjs: enableAdonisJs = hasAdonisjs,
+    react: enableReact = false,
   } = options
 
   const configs: Awaitable<FlatConfigItem[]>[] = []
@@ -103,6 +105,10 @@ export function tpointurier(
 
   if (enablePrettier) {
     configs.push(prettier())
+  }
+
+  if (enableReact) {
+    configs.push(react())
   }
 
   // User can optionally pass a flat config item to the first argument
