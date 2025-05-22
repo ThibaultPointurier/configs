@@ -1,7 +1,7 @@
 {
   "name": "@tpointurier/configs",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "Thibault Pointurier <thibault.pointurier.pro@gmail.com>",
   "packageManager": "pnpm@9.15.4",
   "description": "ESLint config presets",
@@ -39,6 +39,8 @@
     "eslint-plugin-n": "^17.15.1",
     "eslint-plugin-perfectionist": "^4.8.0",
     "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-unicorn": "^56.0.1",
     "eslint-plugin-vue": "^9.32.0",
     "jsonc-eslint-parser": "^2.4.0",
